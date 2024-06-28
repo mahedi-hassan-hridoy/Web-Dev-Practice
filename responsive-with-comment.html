@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu</title>
+    <style>
+        /**
+         * Container for the menu items
+         * 
+         * This container uses flexbox to layout the menu items horizontally
+         * and wraps them to the next line when the screen width is reduced.
+         */
+        .menu-container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        /**
+         * Individual menu item
+         * 
+         * Each menu item has a border, width, and margin. The image inside
+         * the menu item is set to 75% of the menu item's width.
+         */
+        .food{
+            border: 3px solid rosybrown;
+            width: 300px;
+            margin: 10px;
+        }
+        
+        /**
+         * Image inside the menu item
+         * 
+         * The image is set to 75% of the menu item's width.
+         */
+        .food img{
+          width: 75%;  
+        }
+        
+        /**
+         * Media query for small screens (max-width: 500px)
+         * 
+         * On small screens, the menu items are stacked vertically and
+         * have a background color of orange.
+         */
+        /* @media (max-width: 500px) {
+            .food{
+                background-color: orange;
+                margin-bottom: 20px;
+            }
+            .menu-container{
+                flex-direction: column;
+            }
+        }
+        
+        /**
+         * Media query for large screens (min-width: 900px)
+         * 
+         * On large screens, the menu items are laid out horizontally
+         * and have a width of 300px.
+         */
+        /* @media (min-width: 900px) {
+          
+        } */
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <!-- Example menu item -->
+        <div class="food">
+            <img src="images/healthy.jpg" alt="">
+            <h2>Price:100</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, exercitationem provident, voluptatum fugit consequuntur iste magnam eaque perferendis quidem eius libero labore rerum eum deserunt, dignissimos temporibus. Quis quae architecto quasi nihil quidem! Et excepturi voluptatum odio nam similique aliquam error, modi, quam voluptates, repellendus repellat ratione ut nobis neque!<br><button>Order Now</button></p>
+        </div>
+        <!-- More menu items here -->
+    </div>
+</body>
+</html>
